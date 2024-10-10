@@ -20,7 +20,7 @@
                 <div class="compilation-layer">
                     <h4>Setup</h4>
                     <p>Setting up Laravel Project<p>
-                    <a href="{{ route('portf') }}"><i class='bx bx-link-external'></i>
+                    <a href="{{ route('portfolio2') }}"><i class='bx bx-link-external'></i>
                 </div>
             </div>
 
