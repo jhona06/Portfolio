@@ -6,6 +6,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield ('title') Portfolio</title>
+        <!-- Import Bootstrap's Carousel CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap-carousel.min.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
@@ -260,7 +262,105 @@
             height: 5rem;
             margin-top: 20%;
         }
-        
+
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            max-width: 700px;
+            margin: auto;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+            border-radius: 10px;
+        }
+
+        .carousel-slide {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-image {
+            width: 100%;
+            border-radius: 10px; 
+            object-fit: cover; 
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 24px;
+            border-radius: 50%;
+            z-index: 10;
+            transition: background-color 0.3s ease;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .scrollable-content {
+            max-height: 300px; 
+            overflow-y: auto; 
+            padding: 20px; 
+            border: 1px solid #ddd; 
+            border-radius: 10px;
+            background-color: #f9f9f9; 
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+        }
+
+        /* Customize scrollbar */
+        .scrollable-content::-webkit-scrollbar {
+            width: 8px; 
+        }
+
+        .scrollable-content::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, 0.3); 
+            border-radius: 10px;
+        }
+
+        .scrollable-content::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 0, 0, 0.5); 
+        }
+
+        .about-content {
+            text-align: center; 
+            margin-top: 20px;
+        }
+
+        .about-content h2 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .about-content h2 span {
+            color: #ff7e5f; 
+        }
+
+        .about-content h3 {
+            font-size: 1.8em;
+            color: #555;
+        }
+
+        .about-content p {
+            font-size: 1.1em;
+            color: #777;
+            line-height: 1.6;
+            margin-top: 15px;
+        }
+
     </style>
 
 </head>
@@ -279,8 +379,10 @@
         @yield('content')
     </main>
 
-    <script src="js/script.js"></script>
 
 </body>
+<!-- Import Bootstrap's Carousel JavaScript only -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </html>
