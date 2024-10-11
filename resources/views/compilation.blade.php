@@ -4,7 +4,7 @@
 
 @section('content')
     <section class="compilation" id="compilation">
-        <h2 class="heading">Compilation of <span>Lab Activities<span></h2>
+        <h2 class="heading">Compilation of <span> Lab Activities<span></h2>
         <div class="compilation-container">
             <div class="compilation-box">
                 <img src="{{ asset('images/pic1.png') }}">
