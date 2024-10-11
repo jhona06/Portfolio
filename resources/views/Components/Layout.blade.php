@@ -7,55 +7,60 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield ('title') Portfolio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Import Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <style>
-        /* Keyframes for fade-in animation */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+        .typewriter {
+            overflow: hidden;
+            white-space: nowrap;
+            letter-spacing: 0.1em;
+            animation: typing 3.5s steps(30, end);
+        }
 
-/* Applying fade-in animation */
-.fade-in {
-    animation: fadeIn 1s ease-in forwards; /* Basic fade-in animation */
-}
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
 
-/* Adding delay for sequential animations */
-.delay-1 {
-    animation-delay: 0.5s; /* Delay for the first element */
-}
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-.delay-2 {
-    animation-delay: 1s; /* Delay for the second element */
-}
+        .fade-in {
+            animation: fadeIn 1s ease-in forwards; 
+        }
 
-.delay-3 {
-    animation-delay: 1.5s; /* Delay for the third element */
-}
+        .delay-1 {
+            animation-delay: 0.5s;
+        }
 
-.delay-4 {
-    animation-delay: 2s; /* Delay for the image */
-}
+        .delay-2 {
+            animation-delay: 1s;
+        }
 
-/* Existing styles for the content */
-#name {
-    opacity: 0; /* Initially hidden for the fade-in effect */
-    transition: opacity 1s ease-in; /* Transition for fading in */
-}
+        .delay-3 {
+            animation-delay: 1.5s;
+        }
 
-/* Style for student title to initially hide */
-#studentTitle {
-    opacity: 0; /* Initially hidden for the fade-in effect */
-    transition: opacity 2s ease-in; /* Transition for fading in */
-}
+        .delay-4 {
+            animation-delay: 2s; 
+        }
+
+        #name {
+            opacity: 0; 
+            transition: opacity 1s ease-in; 
+        }
+        #studentTitle {
+            opacity: 0; 
+            transition: opacity 2s ease-in; 
+        }
 
 
         * {
