@@ -81,7 +81,7 @@
             --second-bg-color: #e9ecef; 
             --text-color: #343a40;
             --content-color: #F5F7F8;
-            --main-color: #007bff; 
+            --main-color: #0D7C66; 
         }
 
         html {
@@ -360,6 +360,135 @@
             line-height: 1.6;
             margin-top: 15px;
         }
+        .center-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        text-align: center;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+
+    .portfolio-title {
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    .portfolio-content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; 
+        flex-direction: row; 
+        gap: 50px; 
+    }
+
+    .image-section {
+        flex: 1;
+        max-width: 45%;
+    }
+
+    .custom-carousel {
+        position: relative;
+        max-width: 45%;
+    }
+
+    .carousel-track-container {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .carousel-track {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-slide {
+        min-width: 100%;
+    }
+
+    .carousel-slide img {
+        margin-top: 5%;
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .carousel-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .left-button {
+        left: 10px;
+    }
+
+    .right-button {
+        right: 10px;
+    }
+
+    .narrative {
+        flex: 1;
+        max-width: 50%;
+        max-height: 400px; 
+        overflow-y: scroll; 
+        text-align: justify; 
+        padding-right: 10px; 
+    }
+
+
+    .narrative p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .narrative h2 {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+
+    .narrative ul {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+    .image-container {
+    position: relative;
+    width: 100%; 
+    }
+
+    .image-container img {
+        width: 100%; 
+        height: auto;
+    }
+
+    .description {
+        position: absolute;
+        bottom: 10px; 
+        left: 50%;
+        transform: translateX(-50%); 
+        color: black;
+        background-color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        text-align: center; 
+        font-size: 0.8em; 
+        max-width: 90%; 
+    }
 
     </style>
 
