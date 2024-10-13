@@ -30,22 +30,15 @@
                 <button class="carousel-button right-button">&gt;</button>
             </div>
             <div class="narrative">
-                
-            <p>Welcome to my design portfolio. Below you will find a showcase of my projects. The work presented here highlights a wide range of design principles, styles, and technical abilities. Each project is a reflection of my commitment to aesthetics, user experience, and functionality. From visual design to interactive elements, I ensure that every piece meets the highest standards of creativity and practicality.</p>
-                <p>Project 1: An exploration of minimalism in modern web design.</p>
-                <p>Project 2: A dynamic user interface for a mobile application focusing on user interaction and engagement.</p>
-                <p>Project 3: A corporate branding and identity design for a well-known organization.</p><p>Welcome to my design portfolio. Below you will find a showcase of my projects. The work presented here highlights a wide range of design principles, styles, and technical abilities. Each project is a reflection of my commitment to aesthetics, user experience, and functionality. From visual design to interactive elements, I ensure that every piece meets the highest standards of creativity and practicality.</p>
-                <p>Project 1: An exploration of minimalism in modern web design.</p>
-                <p>Project 2: A dynamic user interface for a mobile application focusing on user interaction and engagement.</p>
-                <p>Project 3: A corporate branding and identity design for a well-known organization.</p>
-                <p>Welcome to my design portfolio. Below you will find a showcase of my projects. The work presented here highlights a wide range of design principles, styles, and technical abilities. Each project is a reflection of my commitment to aesthetics, user experience, and functionality. From visual design to interactive elements, I ensure that every piece meets the highest standards of creativity and practicality.</p>
-                <p>Project 1: An exploration of minimalism in modern web design.</p>
-                <p>Project 2: A dynamic user interface for a mobile application focusing on user interaction and engagement.</p>
-                <p>Project 3: A corporate branding and identity design for a well-known organization.</p>
-                <p>Welcome to my design portfolio. Below you will find a showcase of my projects. The work presented here highlights a wide range of design principles, styles, and technical abilities. Each project is a reflection of my commitment to aesthetics, user experience, and functionality. From visual design to interactive elements, I ensure that every piece meets the highest standards of creativity and practicality.</p>
-                <p>Project 1: An exploration of minimalism in modern web design.</p>
-                <p>Project 2: A dynamic user interface for a mobile application focusing on user interaction and engagement.</p>
-                <p>Project 3: A corporate branding and identity design for a well-known organization.</p>
+            <p> To start our Laravel project, we installed the essential framework and dependencies. Using Composer, we installed Laravel, ensuring that all necessary libraries and packages were in place for seamless development. Following installation, we started the project by putting it under version control using Git. This enabled us to efficiently monitor changes and preserve the project's history via frequent commits. </p>
+            <p> Next, we set up the .env file, which is required for environment-specific customizations such as database connections. We connected our Laravel application to the database by entering the right database credentials, allowing us to manage data effortlessly thereafter. </p>
+            <p> After completing the core structure, we began constructing the frontend, which had three important views: the homepage, about page, and content page. These views are intended to manage the application's presentation layer and were placed in Laravel's resources/views directory. We then linked these views to specific routes by specifying the URLs that visitors might use, ensuring that the application displayed the relevant page when requested. </p>
+            <p> As part of the project's organization, we specified the purpose of essential folders and files, as well as the roles of components such as the app folder for application logic, routes for URL processing, and resources/views for user interface. </p>
+            <p> Finally, we collected screenshots of each critical stage of the process, from installation to route configuration and examining the final output in the browser. This documentation offered a clear roadmap for our development process, ensuring that each phase of the project was well documented and easily followed. </p>
+
+
+
+
             </div>
         </div>
     </div>

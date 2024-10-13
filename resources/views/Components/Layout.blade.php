@@ -415,7 +415,7 @@
     }
 
     .carousel-slide img {
-        margin-top: 5%;
+        margin-top: 15%;
         width: 100%;
         height: auto;
         border-radius: 8px;
@@ -442,6 +442,7 @@
     }
 
     .narrative {
+        margin-top: 5%;
         flex: 1;
         max-width: 50%;
         max-height: 400px; 
@@ -452,7 +453,7 @@
 
 
     .narrative p {
-        font-size: 1.1em;
+        font-size: 1.5em;
         line-height: 1.6;
         margin-bottom: 20px;
     }

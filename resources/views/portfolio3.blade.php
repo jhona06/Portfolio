@@ -62,22 +62,24 @@
             </div>
 
             <div class="narrative">
-                
-            <p>Welcome to my design portfolio. Below you will find a showcase of my projects. The work presented here highlights a wide range of design principles, styles, and technical abilities. Each project is a reflection of my commitment to aesthetics, user experience, and functionality. From visual design to interactive elements, I ensure that every piece meets the highest standards of creativity and practicality.</p>
-                <p>Project 1: An exploration of minimalism in modern web design.</p>
-                <p>Project 2: A dynamic user interface for a mobile application focusing on user interaction and engagement.</p>
-                <p>Project 3: A corporate branding and identity design for a well-known organization.</p><p>Welcome to my design portfolio. Below you will find a showcase of my projects. The work presented here highlights a wide range of design principles, styles, and technical abilities. Each project is a reflection of my commitment to aesthetics, user experience, and functionality. From visual design to interactive elements, I ensure that every piece meets the highest standards of creativity and practicality.</p>
-                <p>Project 1: An exploration of minimalism in modern web design.</p>
-                <p>Project 2: A dynamic user interface for a mobile application focusing on user interaction and engagement.</p>
-                <p>Project 3: A corporate branding and identity design for a well-known organization.</p>
-                <p>Welcome to my design portfolio. Below you will find a showcase of my projects. The work presented here highlights a wide range of design principles, styles, and technical abilities. Each project is a reflection of my commitment to aesthetics, user experience, and functionality. From visual design to interactive elements, I ensure that every piece meets the highest standards of creativity and practicality.</p>
-                <p>Project 1: An exploration of minimalism in modern web design.</p>
-                <p>Project 2: A dynamic user interface for a mobile application focusing on user interaction and engagement.</p>
-                <p>Project 3: A corporate branding and identity design for a well-known organization.</p>
-                <p>Welcome to my design portfolio. Below you will find a showcase of my projects. The work presented here highlights a wide range of design principles, styles, and technical abilities. Each project is a reflection of my commitment to aesthetics, user experience, and functionality. From visual design to interactive elements, I ensure that every piece meets the highest standards of creativity and practicality.</p>
-                <p>Project 1: An exploration of minimalism in modern web design.</p>
-                <p>Project 2: A dynamic user interface for a mobile application focusing on user interaction and engagement.</p>
-                <p>Project 3: A corporate branding and identity design for a well-known organization.</p>
+            <h2> Creating a Layout File </h2>
+            <p> To begin, we created a layout file in the resources/views directory to serve as a reusable layout for our Laravel application. We begin by creating a new folder called "Components" to organise our views' reusable parts. Inside this folder, we create a new Blade file named Layout.blade.php. This layout file provides the basis for the general structure of our web pages, comprising the basic HTML skeleton, which contains parts such as the header, footer, and connections to stylesheets and scripts. </p>
+            <p> Individual views can expand the layout, ensuring consistent appearance and structure across pages. For example, in Layout.blade.php, we identify places where individual views' content will be put, allowing for flexibility while maintaining the fundamental layout. </p>
+            <h2> Creating Views </h2>
+            <p> Next, we make three Blade view files in the resources/views folder. Each view represents a separate page, and all views are intended to expand the layout file established in Part 1. Blade's at extends directive ensures that each view inherits the structure described in Layout.blade.php, whereas the at section directive defines page-specific content. </p>
+            <p> For example, we develop a homepage view (home.blade.php) that extends the layout and adds welcome information to the specified area. Similarly, we develop two more views for the "About" and "Contact" pages, each with its own unique content but having the same basic framework. This technique maintains a clear separation of responsibilities, with layout control centralized in a single file and content described in separate views. </p>
+            <h2> Update Routes </h2>
+            <p>Once the layout and views are complete, we can update the routes in routes/web.php to serve the views. For each page, we create a route that connects a URL to the relevant view file. </p>
+
+            <p> Similar routes are developed for the "About" and "Contact" pages to ensure that each URL returns the right view. Setting up these routes establishes the navigation for our application, letting users to visit the various pages via the respective URLs. </p>
+            <h2> Learnings and Difficulties </h2>
+            <p>This project taught us how to use Laravel's Blade to construct reusable layouts. By designing a layout file, we ensured that the overall structure of our web pages remained constant across multiple views, making site management easier. Using Blade's at extends and at section, we were able to include page-specific material into the layout without repeating code. </p>
+
+            <p>We also experimented with routing, creating routes in web.php to link URLs to certain views. This facilitated navigation between pages such as the home, About Us, and Contact Us. </p>
+
+            <p> One of the issues we had was ensuring that the Blade syntax was precise, as minor errors in the at section or at yield directives may cause the views to render incorrectly. Configuring the routes and putting limitations to route parameters needed considerable attention to ensure that everything functioned properly. </p>
+            <p>Overall, the project emphasized the significance of using clear structure, syntax, and organization while developing Laravel apps. </p>
+
             </div>
         </div>
     </div>
