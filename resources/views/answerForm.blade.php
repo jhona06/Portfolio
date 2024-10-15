@@ -22,95 +22,88 @@
         </div>
     @endif
 </section>
+@endsection
 
 <style>
-    body, html {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f4f8;
-    font-family: Arial, sans-serif;
-}
+    body {
+        background-color: #e6f7f9;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
 
-#answer-form {
-    width: 100%;
-    max-width: 600px;
-    padding: 20px;
-    border-radius: 12px;
-    background-color: #ffffff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
+    .answer-form {
+        background-color: #b3e5fc;
+        border-radius: 10px;
+        padding: 40px;
+        width: 60%; /
+        max-width: 700px;
+        margin: 50px auto;
+        text-align: center;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        border: 2px solid #00796b; 
+    }
 
-.answer-form {
-    width: 100%;
-    padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
+    .answer-form h2 {
+        color: #00695c;
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
 
-.verse-text {
-    font-style: italic;
-    margin: 20px 0;
-    padding: 15px;
-    background-color: #e7f3fe;
-    border-left: 6px solid #2196F3;
-    color: #333;
-}
+    .verse-text {
+        font-style: italic;
+        margin: 15px 0;
+        padding: 15px;
+        background-color: #e7f3fe;
+        border-left: 6px solid #2196F3;
+        font-size: 1.1em;
+        color: #333;
+        text-align: left; 
+    }
 
-.form-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
+    .form-container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
 
-.form-container label {
-    font-weight: bold;
-    color: #555;
-}
+    .form-container label {
+        font-size: 1.1em;
+        color: #555;
+        text-align: left;
+    }
 
-.form-container input[type="text"] {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-    transition: border 0.3s ease;
-}
+    .form-container input[type="text"] {
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1.1em;
+        width: 100%;
+        height: 50px;
+    }
 
-.form-container input[type="text"]:focus {
-    border-color: #2196F3;
-    outline: none;
-    box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
-}
+    .form-container button {
+        padding: 12px;
+        background-color: #00796b;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.1em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
 
-.form-container button {
-    padding: 12px;
-    background-color: #2196F3;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+    .form-container button:hover {
+        background-color: #004d40;
+    }
 
-.form-container button:hover {
-    background-color: #1976D2;
-}
-
-.alert {
-    margin-top: 15px;
-    padding: 12px;
-    background-color: #f8d7da;
-    color: #721c24;
-    border: 1px solid #f5c6cb;
-    border-radius: 6px;
-    text-align: center;
-}
+    .alert {
+        margin-top: 20px;
+        padding: 15px;
+        background-color: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+        border-radius: 6px;
+    }
 </style>
-
-@endsection

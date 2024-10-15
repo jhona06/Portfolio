@@ -32,7 +32,7 @@ Route::post('/submit-answer', function (Request $request) {
 
         // Store the answer in the session if correct
         $request->session()->put('answered_form', true);
-        return redirect()->route('compilation');
+        return redirect()->route('compilation'); // Redirect to the compilation route after correct submission
     } else {
         // Log incorrect submission
         Log::warning('User submitted an incorrect label: ' . $answer);
@@ -42,10 +42,15 @@ Route::post('/submit-answer', function (Request $request) {
     }
 })->name('submitAnswer');
 
-// Route to the compilation page, protected by the AnsweredMiddleware
-Route::get('/compilation', function () {
-    return view('compilation');
-})->name('compilation')->middleware(AnsweredMiddleware::class);
+// Route to the compilation page, accessible only if the answer was correct
+Route::get('/compilation', function (Request $request) {
+    // Check if the user has answered the form correctly
+    if ($request->session()->has('answered_form')) {
+        return view('compilation'); // Load the compilation content if the user has answered correctly
+    } else {
+        return redirect()->route('answerForm'); // Redirect to answer form if they haven't answered yet
+    }
+})->name('compilation');
 
 // Portfolio routes
 Route::get('/portfolio1', function () {
