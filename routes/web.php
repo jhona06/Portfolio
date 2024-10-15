@@ -1,45 +1,21 @@
 <?php
 
+use App\Http\Middleware\AnsweredMiddleware; 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log; 
-use App\Http\Middleware\AnsweredMiddleware; 
 
+// Route to the home page
 Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/compilation', function () {
-    return view('compilation');
-})->name('compilation');
-
-Route::get('/portfolio1', function () {
-    return view('portfolio1');
-})->name('portfolio1');
-
-Route::get('/portfolio2', function () {
-    return view('portfolio2');
-})->name('portfolio2');
-
-Route::get('/portfolio3', function () {
-    return view('portfolio3');
-})->name('portfolio3');
-
-Route::get('/portfolio4', function () {
-    return view('portfolio4');
-})->name('portfolio4');
-
-
-
-Route::get('/compilation', function () {
-    return view('compilation');
-})->name('compilation')->middleware(AnsweredMiddleware::class);
-
-
+// Route to display the answer form
 Route::get('/answer-form', function () {
     return view('answerForm');
 })->name('answerForm');
 
+// Route to handle the answer submission
 Route::post('/submit-answer', function (Request $request) {
     $answer = $request->input('answer');
     
@@ -66,4 +42,24 @@ Route::post('/submit-answer', function (Request $request) {
     }
 })->name('submitAnswer');
 
+// Route to the compilation page, protected by the AnsweredMiddleware
+Route::get('/compilation', function () {
+    return view('compilation');
+})->name('compilation')->middleware(AnsweredMiddleware::class);
 
+// Portfolio routes
+Route::get('/portfolio1', function () {
+    return view('portfolio1');
+})->name('portfolio1');
+
+Route::get('/portfolio2', function () {
+    return view('portfolio2');
+})->name('portfolio2');
+
+Route::get('/portfolio3', function () {
+    return view('portfolio3');
+})->name('portfolio3');
+
+Route::get('/portfolio4', function () {
+    return view('portfolio4');
+})->name('portfolio4');
