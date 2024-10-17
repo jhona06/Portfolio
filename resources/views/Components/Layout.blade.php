@@ -94,6 +94,7 @@
             background: var(--bg-color);
             color: var(--text-color);
             overflow: hidden; 
+            
         }
         section{
             min-height: 100vh;
